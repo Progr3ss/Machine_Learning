@@ -12744,22 +12744,28 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <p>Model 1: AdaBoost</p>
 <p>Real would Application:</p>
 <p>This model does well in text and speech recognition. It can be used to build chat bot using NLP(Natural Language
-Processing)</p>
+Processing).Also used for classifying images. I would bet facebook or other big data companies would use adaBoost for face detection in the profile pictures.</p>
 <p>Strengths: Adaboost is very good at geralization and avoids overfiting.</p>
 <p>Weakness: Adabooks is weak when it comes to nosie and outliers. Adabooks can sometimes overfit if the the base classifier overfits.</p>
 <p>Model Candidate:Because the finding donors data set is large. adaboots will be quick for iterations during training and have less erros for the testing dataset since adaboots can generalize well.</p>
+<p>Reference I would use in the future
+<a href="https://www.datacamp.com/community/tutorials/adaboost-classifier-python">https://www.datacamp.com/community/tutorials/adaboost-classifier-python</a></p>
 <p>Model 2 : Logistic Regression:</p>
 <p>Real would Application:</p>
-<p>Logistic Regression is commonly used for binary classification problems.some examples would be a a university trying to decide to accept the student or not. Another would be a bank to lender you moeny or not based on your credit card.</p>
+<p>Logistic Regression is commonly used for binary classification problems.some examples would be a a university trying to decide to accept the student or not. Another would be a bank to lender you moeny or not based on your credit card and there many other examples another one would be spam email for clasifiying junk email or personal email.</p>
 <p>Strengths: very fast for training and predicting.And generally gives good results when the data has less features.</p>
 <p>Weakness: Does not do well with over fitting.</p>
 <p>Model Candidate: if the problem is binary classificaiton</p>
+<p>Reference I would use in the future
+<a href="https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html">https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html</a></p>
 <p>Model 3 : Descion Trees:</p>
 <p>Real would Application:</p>
-<p>Decision Tress can be used when you are trying to make a descion based on what you know about the user.For example a bank could use it to lend the money to you based on your passed experience.</p>
+<p>Decision Tress can be used when you are trying to make a descion based on what you know about the user.For example a bank could use it to lend the money to you based on your passed experience, Another would be an acard game based on your perference or storyline the story will develop according to your selection.</p>
 <p>Strengths: They're easy to understand and are fast.</p>
 <p>Weakness:  They generally overfits.</p>
 <p>Model Candidate: In this case we're trying to figure out if the user makes more than 50k or less. We can easily use a function to express the features in a descion tree.</p>
+<p>Reference I would use in the future
+<a href="https://scikit-learn.org/stable/modules/tree.html">https://scikit-learn.org/stable/modules/tree.html</a></p>
 
 </div>
 </div>
@@ -12991,6 +12997,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p>Based on the graph AdaBoost does really well on testing and traning data. We would use AdaBoost however it takes the longes time to finish training since we have big data. Also Logistic Regression does okay on training data and then does poorlly on testing data it could be that the model is overfitting the data.</p>
 
 </div>
 </div>
@@ -13013,7 +13020,9 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Based on the graph AdaBoost does really well on testing and traning data. We would use AdaBoost however it takes the longes time to finish training since we have big data. Also Logistic Regression does okay on training data and then does poorlly on testing data it could be that the model is overfitting the data.</p>
+<p>AdaBoost is Machine learning Algorithm  that is used for classification. When you have a large data set like the census.
+Adaboost will divided the datasets into different categoreis.Adaboost works by combining multiple weak classifiers into a single strong classifer.</p>
+<p>Using adaBoost the model can be trained on the known dataset and than look at the unkown dataset and have a good predication accuracy if the person earns more or less.</p>
 
 </div>
 </div>
@@ -13207,6 +13216,8 @@ Final F-score on the testing data: 0.7448
 The older the person the more experience he/she will have hence the higher the salary will be.</p>
 <p>Education Level:
 The higher education level the person has the more skills the person will have therefore the more money he/she will make.</p>
+<p>Education Number:</p>
+<p>A person with more than 1 degree but he/she has a spent a lot of time in school can also influance how much they earn.</p>
 <p>Occupation:
 Different tpes of occupations pays differently. The type of work the person does will also determain how much he/she will make</p>
 <p>Hours per week:</p>
